@@ -11,6 +11,7 @@
 // Windows 头文件: 
 #include <windows.h>
 #include <shellapi.h>
+#include <VersionHelpers.h>
 
 // C 运行时头文件
 #include <stdlib.h>
