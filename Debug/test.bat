@@ -1,5 +1,5 @@
 @echo off
 :loop
 start WindowsFunnyTrojan
-ThreadSleepTools 15000
+ThreadSleepTools 5000
 goto loop

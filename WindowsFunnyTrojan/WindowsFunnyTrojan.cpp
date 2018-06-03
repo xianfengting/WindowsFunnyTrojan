@@ -49,6 +49,7 @@ INT_PTR CALLBACK	About(HWND, UINT, WPARAM, LPARAM);
 
 void DoIconsDrawing(HINSTANCE hInstance)
 {
+	srand(time(NULL));
 	{
 		LONG tmp2 = desktopRect.top;
 		do
@@ -63,31 +64,41 @@ void DoIconsDrawing(HINSTANCE hInstance)
 	}
 
 	{
-	HICON icon = LoadIcon(NULL, IDI_ERROR);
-	HICON icon2 = LoadIcon(NULL, IDI_SHIELD);
-	for (LONG iconXOffset = 0; iconXOffset <= desktopWidth; iconXOffset += 30)
-	{
-		LONG iconX = 0, iconY = 0;
-		do
+		HICON icon = LoadIcon(NULL, IDI_ERROR);
+		//HICON icon2 = LoadIcon(NULL, IDI_SHIELD);
+		HICON icon2 = hIcons[rand() % hIconsCount];
+		if (rand() % 2)
 		{
-			DrawIcon(desktopHDc, iconX + iconXOffset, iconY, icon);
-			Sleep(10);
-			iconX += 10;
-			iconY += 10;
-		} while (((iconX + iconXOffset) <= desktopHeight) && (iconY <= desktopWidth));
-	}
-	for (LONG iconYOffset = 0; iconYOffset <= desktopWidth; iconYOffset += 30)
-	{
-		LONG iconX = 0, iconY = 0;
-		do
+			icon2 = hIcons[rand() % hIconsCount];
+		}
+		else
 		{
-			DrawIcon(desktopHDc, iconX, iconY + iconYOffset, icon2);
-			Sleep(10);
-			iconX += 10;
-			iconY += 10;
-		} while ((iconX <= desktopHeight) && ((iconY + iconYOffset) <= desktopWidth));
+			icon2 = ExtractIcon(hInstance, _T("imageres.dll"), rand() % 412);
+		}
+
+		for (LONG iconXOffset = 0; iconXOffset <= desktopWidth; iconXOffset += 30)
+		{
+			LONG iconX = 0, iconY = 0;
+			do
+			{
+				DrawIcon(desktopHDc, iconX + iconXOffset, iconY, icon);
+				Sleep(10);
+				iconX += 10;
+				iconY += 10;
+			} while (((iconX + iconXOffset) <= desktopHeight) && (iconY <= desktopWidth));
+		}
+		for (LONG iconYOffset = 0; iconYOffset <= desktopWidth; iconYOffset += 30)
+		{
+			LONG iconX = 0, iconY = 0;
+			do
+			{
+				DrawIcon(desktopHDc, iconX, iconY + iconYOffset, icon2);
+				Sleep(10);
+				iconX += 10;
+				iconY += 10;
+			} while ((iconX <= desktopHeight) && ((iconY + iconYOffset) <= desktopWidth));
+		}
 	}
-}
 
 	{
 		HICON icon = LoadIcon(NULL, IDI_INFORMATION);

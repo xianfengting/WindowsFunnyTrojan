@@ -95,6 +95,7 @@
     <ResourceCompile Include="WindowsFunnyTrojan.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="JinKeLa.ico" />
     <Image Include="small.ico" />
     <Image Include="WindowsFunnyTrojan.ico" />
   </ItemGroup>

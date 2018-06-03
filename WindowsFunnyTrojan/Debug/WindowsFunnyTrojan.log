@@ -1,9 +1,10 @@
-﻿生成启动时间为 2018/6/3 13:51:50。
+﻿生成启动时间为 2018/6/3 19:16:01。
      1>项目“F:\Coding\IDE\Visual Studio\项目\WindowsFunnyTrojan\WindowsFunnyTrojan\WindowsFunnyTrojan.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          F:\Coding\IDE\Visual Studio\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\WindowsFunnyTrojan.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt WindowsFunnyTrojan.cpp
          WindowsFunnyTrojan.cpp
-     1>f:\coding\ide\visual studio\项目\windowsfunnytrojan\windowsfunnytrojan\windowsfunnytrojan.cpp(134): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>f:\coding\ide\visual studio\项目\windowsfunnytrojan\windowsfunnytrojan\windowsfunnytrojan.cpp(52): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+     1>f:\coding\ide\visual studio\项目\windowsfunnytrojan\windowsfunnytrojan\windowsfunnytrojan.cpp(145): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
        Link:
          F:\Coding\IDE\Visual Studio\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Coding\IDE\Visual Studio\项目\WindowsFunnyTrojan\Debug\WindowsFunnyTrojan.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Coding\IDE\Visual Studio\项目\WindowsFunnyTrojan\Debug\WindowsFunnyTrojan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Coding\IDE\Visual Studio\项目\WindowsFunnyTrojan\Debug\WindowsFunnyTrojan.lib" /MACHINE:X86 Debug\WindowsFunnyTrojan.res
          Debug\stdafx.obj
@@ -13,4 +14,4 @@
 
 生成成功。
 
-已用时间 00:00:00.76
+已用时间 00:00:00.68
