@@ -68,24 +68,17 @@ void DoIconsDrawing(HINSTANCE hInstance)
 		//HICON icon2 = LoadIcon(NULL, IDI_SHIELD);
 		HICON icon2 = hIcons[rand() % hIconsCount];
 
-		// I want to use the IsWindows10OrGreater() function.
-		// But here isn't the IsWindows10OrGreater() function.
-		// So I use the IsWindows8Point1OrGreater() function.
-		// Here may be some bugs, but I can't fix it.
-		// If you can help me with the bugs, you can open a pull request to help me.
-		// Thanks so much!
-		if (IsWindows8Point1OrGreater())
+		// Get a random icon for icon2.
+		if (rand() % 2)
 		{
-			if (rand() % 2)
-			{
-				icon2 = hIcons[rand() % hIconsCount];
-			}
-			else
-			{
-				icon2 = ExtractIcon(hInstance, _T("imageres.dll"), rand() % 412);
-			}
+			icon2 = hIcons[rand() % hIconsCount];
 		}
 		else
+		{
+			icon2 = ExtractIcon(hInstance, _T("imageres.dll"), rand() % 412);
+		}
+		// If it's unable to get a random icon, use the default icon.
+		if (icon2 == INVALID_HANDLE_VALUE || icon2 == NULL)
 		{
 			icon2 = hIcons[rand() % hIconsCount];
 		}
