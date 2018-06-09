@@ -160,6 +160,15 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 	// 获取到桌面的 HDC 。
 	desktopHDc = GetWindowDC(desktop);
 
+	if (jinKeLaHIcon == INVALID_HANDLE_VALUE || jinKeLaHIcon == NULL)
+	{
+		MessageBoxA(NULL,
+			"程序启动失败: 无法成功加载 JinKeLa.ico 文件。\n"
+			"请确保 JinKeLa.ico 文件与本程序在同一个目录下，再运行本程序。",
+			"程序启动失败", MB_ICONERROR);
+		return -1;
+	}
+
 	DoIconsDrawing(hInstance);
 	DoIconsDrawing(hInstance);
 

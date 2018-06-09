@@ -1,4 +1,4 @@
-﻿生成启动时间为 2018/6/9 14:23:52。
+﻿生成启动时间为 2018/6/9 14:41:20。
      1>项目“F:\Coding\IDE\Visual Studio\项目\WindowsFunnyTrojan\WindowsFunnyTrojan\WindowsFunnyTrojan.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          F:\Coding\IDE\Visual Studio\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\WindowsFunnyTrojan.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt WindowsFunnyTrojan.cpp
@@ -14,4 +14,4 @@
 
 生成成功。
 
-已用时间 00:00:01.70
+已用时间 00:00:01.87
