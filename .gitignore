@@ -34,3 +34,6 @@
 # Logs
 *.log
 *.tlog
+
+# Debug folder
+/Debug/*
